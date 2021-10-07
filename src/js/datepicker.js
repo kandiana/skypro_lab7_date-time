@@ -51,6 +51,7 @@ function setDatePicker(inputBlock) {
 		overlayButton: 'Сохранить',
 		overlayPlaceholder: 'Введите год (4 цифры)',
 		minDate: STATUS.currentDate || new Date(),
+		dateSelected: STATUS.chosenDate.number ? new Date(STATUS.chosenDate.number) : undefined,
 		formatter: (input, date, instance) => {
 			input.value = formatDate(date.toString())
 			STATUS.chosenDate.string = input.value
