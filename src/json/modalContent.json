@@ -1,0 +1,59 @@
+{
+	"tag": "form",
+	"cls": "form",
+	"attrs": {
+		"action": "#",
+		"id": "date-time-form"
+	},
+	"content": [
+		{
+			"tag": "h1",
+			"cls": "form__title",
+			"content": "Выберите дату и время встречи"
+		},
+		{
+			"tag": "div",
+			"cls": "form__control",
+			"content": [
+				{
+					"tag": "label",
+					"cls": "form__control-label",
+					"attrs": {
+						"for": "date"
+					},
+					"content": "День встречи"
+				},
+				{
+					"tag": "input",
+					"cls": ["form__control-input", "date-input"],
+					"attrs": {
+						"id": "date",
+						"type": "text"
+					}
+				}
+			]
+		},
+		{
+			"tag": "div",
+			"cls": "form__control",
+			"content": [
+				{
+					"tag": "label",
+					"cls": "form__control-label",
+					"attrs": {
+						"for": "time"
+					},
+					"content": "Время встречи"
+				},
+				{
+					"tag": "input",
+					"cls": ["form__control-input", "time-input"],
+					"attrs": {
+						"id": "time",
+						"data-clocklet": "alignment: center; append-to: parent"
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,17 @@
+.tingle-modal-box {
+	width: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.tingle-modal-box {
+	border-radius: 20px;
+}
+
+.tingle-modal-box__content {
+	padding: 30px 30px 15px;
+}
+
+.tingle-modal-box__footer {
+	padding: 15px 30px 20px;
+	border-radius: 0 0 20px 20px;
+}
