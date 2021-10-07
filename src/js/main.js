@@ -75,7 +75,9 @@ async function main() {
 	})
 
 	dateInput.addEventListener('blur', (event) => {
-		event.target.value = STATUS.chosenDate.string
+		if (event.target.value) {
+			event.target.value = STATUS.chosenDate.string
+		}
 	})
 
 	timeInput.addEventListener('keypress', (event) => {
@@ -86,7 +88,6 @@ async function main() {
 		event.preventDefault()
 
 		if (!dateInput.value || !timeInput.value) {
-			console.log('Не все поля заполнены!')
 			shakeBlock(modalBox)
 			showToast('Не все поля заполнены!')
 			return
@@ -100,7 +101,6 @@ async function main() {
 				.reduce((res, el) => res * 60 + el) * 1000
 
 		if (STATUS.chosenDate.number + STATUS.chosenTime.number < +STATUS.currentDate) {
-			console.log('Нельзя поставить встречу в прошлом')
 			shakeBlock(modalBox)
 			showToast('Нельзя поставить встречу в прошлом')
 			return
