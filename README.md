@@ -1,8 +1,16 @@
 # skypro_lab7_date-time
+### Запуск проекта:  
+- git clone git@github.com:kandiana/skypro_lab7_date-time.git  
+- cd skypro_lab7_date-time  
+- npm install  
+- npm start  
 
+______________________________________________________________________________________
+
+### Общая информация:
 - На мобильном не все хорошо, но, вроде, работает. Специально под него не подгоняла.  
 
-Использованные пакеты:  
+### Использованные пакеты:  
 - @fortawesome/fontawesome-free - для карандашика  
 - animate.css - для анимации  
 - clocklet - для выбора времени  
