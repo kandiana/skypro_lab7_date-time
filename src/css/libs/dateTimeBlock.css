@@ -1,0 +1,25 @@
+.date-time {
+  display: flex;
+  align-items: center;
+  font-family: var(--fonts);
+}
+
+.date-time__content {
+  margin: 0 10px 0;
+}
+
+.date-time__button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.date-time__button:hover {
+  color: var(--hover-color);
+}
+
+.date-time__icon {
+  vertical-align: middle;
+}

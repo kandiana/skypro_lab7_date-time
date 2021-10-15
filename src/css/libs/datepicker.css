@@ -1,8 +1,8 @@
 .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover {
-	background-color: var(--hover-color);
+  background-color: var(--hover-color);
 }
 
 .qs-active {
-	background-color: var(--bg-color);
-	color: #fff;
+  background-color: var(--bg-color);
+  color: #fff;
 }
