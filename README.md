@@ -1,7 +1,6 @@
 # skypro_lab7_date-time
 ### Запуск проекта:  
-- git clone git@github.com:kandiana/skypro_lab7_date-time.git  
-- cd skypro_lab7_date-time  
+- git clone git@github.com:<project_name>
 - npm install  
 - npm start  
 
