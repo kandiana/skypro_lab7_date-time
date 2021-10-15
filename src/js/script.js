@@ -18,7 +18,7 @@ function fillStatus() {
 
   STATUS.currentDate = new Date()
 
-  if (savedData.chosenDate.number + savedData.chosenTime.number < +STATUS.currentDate) {
+  if (savedData.chosenDate.number + savedData.chosenTime.number < Number(STATUS.currentDate)) {
     localStorage.removeItem('date-time-status')
     STATUS.chosenDate.string = ''
     STATUS.chosenDate.number = 0
@@ -97,10 +97,10 @@ async function main() {
     STATUS.chosenTime.number =
       timeInput.value
         .split(':')
-        .map((el) => +el * 60)
+        .map((el) => Number(el) * 60)
         .reduce((res, el) => res * 60 + el) * 1000
 
-    if (STATUS.chosenDate.number + STATUS.chosenTime.number < +STATUS.currentDate) {
+    if (STATUS.chosenDate.number + STATUS.chosenTime.number < Number(STATUS.currentDate)) {
       shakeBlock(modalBox)
       showToast('Нельзя поставить встречу в прошлом')
       return

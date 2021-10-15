@@ -30,7 +30,7 @@ function templateStringEngine(block) {
   }
 
   if (['string', 'number', true].includes(typeof block)) {
-    // фильтруем входящий текст
+    // filtering input text
     return filterDangerousSymbols(String(block))
   }
 
@@ -47,7 +47,7 @@ function templateStringEngine(block) {
   let classInfo = ''
   const attributesInfo = []
 
-  // классы прописываем мы, поэтому тут фильтрация не нужна
+  // classes are assigned by us, so filtering here is not necessary
   if (block.cls) {
     if (typeof block.cls === 'string') {
       classInfo = `class="${block.cls}" `
@@ -58,7 +58,7 @@ function templateStringEngine(block) {
 
   if (block.attrs) {
     for (let attributeName in block.attrs) {
-      // фильтруем значения атрибутов
+      // filtering attributes' values
       attributesInfo.push(`${attributeName}="${filterDangerousSymbols(block.attrs[attributeName])}"`)
     }
   }

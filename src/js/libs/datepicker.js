@@ -38,7 +38,6 @@ const MONTHS_MAP = new Map([
 ])
 
 function formatDate(date) {
-  // date: Sun Oct 03 2021 00:00:00 GMT+0300 (Moscow Standard Time)
   const dateArray = date.split(' ')
   return `${DAYS_MAP.get(dateArray[0])}, ${+dateArray[2]} ${MONTHS_MAP.get(dateArray[1])} ${dateArray[3]} года`
 }
