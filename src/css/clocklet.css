@@ -1,27 +1,27 @@
 .clocklet-container {
-	font-family: var(--fonts);
+  font-family: var(--fonts);
 }
 
 .clocklet .clocklet-hand {
-	background-color: #b179e6;
+  background-color: #b179e6;
 }
 .clocklet-hand-origin {
-	background-color: #5304a1;
+  background-color: #5304a1;
 }
 .clocklet-tick--selected {
-	background-color: var(--bg-color);
-	color: #fff;
+  background-color: var(--bg-color);
+  color: #fff;
 }
 .clocklet--hoverable:not(.clocklet--dragging) .clocklet-tick:hover {
-	background-color: var(--hover-color);
-	color: #fff;
+  background-color: var(--hover-color);
+  color: #fff;
 }
 
 .clocklet-ampm::before {
-	background-color: var(--bg-color);
-	color: #fff;
+  background-color: var(--bg-color);
+  color: #fff;
 }
 .clocklet-ampm:hover::before {
-	background-color: var(--hover-color);
-	color: #fff;
+  background-color: var(--hover-color);
+  color: #fff;
 }

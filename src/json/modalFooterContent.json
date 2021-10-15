@@ -1,20 +1,20 @@
 {
-	"tag": "div",
-	"cls": "modal-footer__wrapper",
-	"content": [
-		{
-			"tag": "button",
-			"cls": ["modal__button", "modal__button_ok", "tingle-btn"],
-			"attrs": {
-				"type": "submit",
-				"form": "date-time-form"
-			},
-			"content": "Ок"
-		},
-		{
-			"tag": "button",
-			"cls": ["modal__button", "modal__button_cancel", "tingle-btn"],
-			"content": "Отмена"
-		}
-	]
+  "tag": "div",
+  "cls": "modal-footer__wrapper",
+  "content": [
+    {
+      "tag": "button",
+      "cls": ["modal__button", "modal__button_ok", "tingle-btn"],
+      "attrs": {
+        "type": "submit",
+        "form": "date-time-form"
+      },
+      "content": "Ок"
+    },
+    {
+      "tag": "button",
+      "cls": ["modal__button", "modal__button_cancel", "tingle-btn"],
+      "content": "Отмена"
+    }
+  ]
 }

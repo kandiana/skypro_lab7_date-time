@@ -1,19 +1,19 @@
 {
-	"tag": "div",
-	"cls": "date-time",
-	"content": [
-		{
-			"tag": "p",
-			"cls": "date-time__content",
-			"content": ""
-		},
-		{
-			"tag": "button",
-			"cls": "date-time__button",
-			"content": {
-				"tag": "i",
-				"cls": ["far", "fa-edit", "date-time__icon"]
-			}
-		}
-	]
+  "tag": "div",
+  "cls": "date-time",
+  "content": [
+    {
+      "tag": "p",
+      "cls": "date-time__content",
+      "content": ""
+    },
+    {
+      "tag": "button",
+      "cls": "date-time__button",
+      "content": {
+        "tag": "i",
+        "cls": ["far", "fa-edit", "date-time__icon"]
+      }
+    }
+  ]
 }
